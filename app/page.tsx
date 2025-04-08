@@ -7,8 +7,8 @@ export default function Home() {
         I’m Aman — blending UX research, design, and frontend development to build meaningful digital products.
       </div>
       <div className="flex flex-col w-full gap-8">
-        <ProjectCards />
-        <ProjectCards />
+        <ProjectCards title="Project #1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ullamcorper vulputate. Phasellus efficitur lacus a lectus mollis, ut posuere tortor scelerisque"/>
+        <ProjectCards title="Project #1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ullamcorper vulputate. Phasellus efficitur lacus a lectus mollis, ut posuere tortor scelerisque"/>
       </div>
     </div>
   );
