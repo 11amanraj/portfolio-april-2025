@@ -4,7 +4,7 @@ import NavLinksCondensed from '../Navigation/NavLinksCondensed'
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between py-8'>
+    <nav className='flex justify-between py-8 responsive-padding'>
         <div>Logo</div>
         <a 
           href='/aman_resume.pdf' 

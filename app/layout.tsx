@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="antialiased px-8"
+        className="antialiased min-h-screen"
       >
         <NavBar />
         {children}
