@@ -6,7 +6,7 @@ const ProjectCards: React.FC<{title: string, description: string}> = ({title, de
         <div className="bg-red-800 flex-1"></div>
         <div className="bg-green-800 flex-1 flex flex-col justify-between">
             <div className='pt-4 flex flex-col gap-4'>
-                <h3>{title}</h3>
+                <h3 className='text-2xl'>{title}</h3>
                 <p>{description}</p>
             </div>
             <ul className='pb-4 flex gap-2'>
