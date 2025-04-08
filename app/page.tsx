@@ -1,4 +1,5 @@
 import ProjectCards from "./Components/Project/ProjectCards";
+import { Project } from '@/app/Types/Interface'
 
 export default function Home() {
   return (

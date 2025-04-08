@@ -1,5 +1,6 @@
 import React from 'react'
 import Tags from './Tags'
+import { Project } from '@/app/Types/Interface'
 
 const ProjectCards: React.FC<{title: string, description: string}> = ({title, description}) => {
   return (
