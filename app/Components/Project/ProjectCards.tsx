@@ -1,4 +1,5 @@
 import React from 'react'
+import Tags from './Tags'
 
 const ProjectCards: React.FC<{title: string, description: string}> = ({title, description}) => {
   return (
@@ -9,10 +10,10 @@ const ProjectCards: React.FC<{title: string, description: string}> = ({title, de
                 <h3 className='text-2xl'>{title}</h3>
                 <p>{description}</p>
             </div>
-            <ul className='pb-4 flex gap-2'>
-                <li>UX Research</li>
-                <li>UX Research</li>
-                <li>UX Research</li>
+            <ul className='pb-4 flex gap-2 flex-wrap'>
+                <Tags title='UX Research'/>
+                <Tags title='UI'/>
+                <Tags title='Frontend'/>
             </ul>
         </div>
     </div>
