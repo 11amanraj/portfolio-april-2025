@@ -21,6 +21,34 @@ export default function Home() {
       resourceLink: 'www.google.com',
       image: '/project-thumbnails/gpay-redesign.jpg'
     },
+    {
+      id: 2,
+      title: 'Researching Mobile Accessibility for the Elderly',
+      description: 'Through user interviews and observational research, we uncovered barriers faced by older adults in mobile usage — culminating in a comprehensive set of accessibility guidelines.',
+      tags: ['UX Resarch, UI, Frontend'],
+      caseStudyLink: 'https://www.behance.net/gallery/213415765/A-UX-case-study-on-senior-friendly-mobile-interactions', 
+      resourceLink: 'www.google.com',
+      image: '/project-thumbnails/gpay-redesign.jpg'
+    },
+    {
+      id: 3,
+      title: 'A Designer–Developer’s Portfolio, Built with Code',
+      description: 'Designed and developed my own portfolio using Next.js, TailwindCSS, and TypeScript — blending aesthetics with performance and thoughtful UX.',
+      tags: ['UX Resarch, UI, Frontend'],
+      caseStudyLink: 'https://www.behance.net/gallery/213415765/A-UX-case-study-on-senior-friendly-mobile-interactions', 
+      resourceLink: 'www.google.com',
+      image: '/project-thumbnails/gpay-redesign.jpg'
+    },
+    {
+      id: 4,
+      title: 'Starbound: A Static Site for a Space Tourism Brand',
+      description: 'Designed and developed a concept website with custom layouts and page routing, highlighting creative theming and component reuse.',
+      tags: ['UX Resarch, UI, Frontend'],
+      caseStudyLink: 'https://www.behance.net/gallery/213415765/A-UX-case-study-on-senior-friendly-mobile-interactions', 
+      resourceLink: 'www.google.com',
+      image: '/project-thumbnails/gpay-redesign.jpg'
+    }
+
   ]
 
   return (
