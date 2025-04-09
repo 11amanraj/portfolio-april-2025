@@ -13,7 +13,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex flex-col gap-8 responsive-padding">
+    <div className="flex flex-col gap-8 responsive-padding mb-8">
       <div className="text-4xl text-blue-600 font-heading">
         I’m Aman — blending UX research, design, and frontend development to build meaningful digital products.
       </div>
