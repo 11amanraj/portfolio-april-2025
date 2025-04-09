@@ -14,8 +14,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-8 responsive-padding mb-8">
-      <div className="text-4xl text-blue-600 font-heading">
-        I’m Aman — blending UX research, design, and frontend development to build meaningful digital products.
+      <div className="text-4xl font-heading">
+        I’m Aman — blending <span className="text-primary">UX research</span>, <span className="text-primary">design</span>, and <span className="text-primary">frontend development</span> to build meaningful digital products.
       </div>
       <div className="flex flex-col w-full gap-8">
         <ProjectCards project={project_details[0]}/>
