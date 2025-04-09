@@ -3,5 +3,6 @@ export interface Project {
     description: string,
     tags: string[],
     caseStudyLink: string,
-    resourceLink: string
+    resourceLink: string,
+    image: string
 }
