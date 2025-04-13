@@ -62,8 +62,6 @@ export default function Home() {
       </div>
       <div className="flex flex-col w-full gap-8">
         {project_details.map(project => <ProjectCards key={project.id} project={project}/>)}
-        {/* <ProjectCards project={project_details[0]}/>
-        <ProjectCards project={project_details[0]}/> */}
       </div>
     </div>
   );
