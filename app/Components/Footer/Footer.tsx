@@ -11,8 +11,22 @@ const Footer = () => {
         <p>Copyright © Aman Raj</p>
         <p>Roorkee, IN</p>
         <div className='flex gap-4'>
-          <div>Behance</div>
-          <div>Linkedin</div>
+          <a 
+            href='https://www.behance.net/amanraj228'
+            target='_blank'
+            rel="noopener noreferrer"
+            className='w-8'
+          >
+            <img src='./icons/behance.png' alt='behance'/>
+          </a>
+          <a 
+            href='https://www.linkedin.com/in/aman-r-8a2724107/'
+            target='_blank'
+            rel="noopener noreferrer"
+            className='w-8'
+          >
+            <img src='./icons/linkedin.png' alt='linkedin'/>
+          </a>
         </div>
       </div>
     </footer>
