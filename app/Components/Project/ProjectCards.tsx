@@ -14,7 +14,12 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
         </div>
         <div className="bg-green-800 flex-1 flex flex-col justify-between">
             <div className='pt-4 flex flex-col gap-4'>
-                <h3 className='text-2xl font-heading flex gap-2'><span>{project.title}</span><span><a href={project.caseStudyLink}>Open</a></span></h3>
+                <h3 className='text-2xl font-heading'>
+                  <span>{project.title}</span>
+                  <span><a href={project.caseStudyLink} target="_blank">
+                    <img src="./icons/open_in_new.svg" alt="open-in-new" />
+                  </a></span>
+                </h3>
                 <p className='font-text'>{project.description}</p>
             </div>
             <ul className='pb-4 flex gap-2 flex-wrap'>
