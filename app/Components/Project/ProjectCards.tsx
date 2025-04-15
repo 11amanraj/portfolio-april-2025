@@ -16,9 +16,6 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
             <div className='pt-4 flex flex-col gap-4'>
                 <h3 className='text-2xl font-heading'>
                   <span>{project.title}</span>
-                  <span><a href={project.caseStudyLink} target="_blank">
-                    <img src="./icons/open_in_new.svg" alt="open-in-new" />
-                  </a></span>
                 </h3>
                 <p className='font-text'>{project.description}</p>
             </div>
@@ -27,6 +24,14 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
                 <Tags title='UI'/>
                 <Tags title='Frontend'/>
             </ul>
+          <div className='flex gap-4'>
+            <span>Open Case Study</span>
+            <span>
+              <a href={project.caseStudyLink} target="_blank" rel="noopener noreferrer">
+                <img src="./icons/open_in_new.svg" alt="open-in-new" />
+              </a>
+            </span>
+          </div>
         </div>
     </div>
   )
