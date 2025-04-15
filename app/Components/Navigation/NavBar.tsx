@@ -12,7 +12,7 @@ const NavBar = () => {
         >
           Resume
         </a>
-        <NavLinks />
+        {/* <NavLinks /> */}
         {/* <NavLinksCondensed /> */}
     </nav>
   )
