@@ -5,7 +5,8 @@ import NavLinksCondensed from '../Navigation/NavLinksCondensed'
 const NavBar = () => {
   return (
     <nav className='flex justify-between py-8 responsive-padding'>
-        <div>Logo</div>
+        {/* <div>Logo</div> */}
+        <img src='/icons/website_logo.svg' alt='website-logo' className='w-8'/>
         <a 
           href='/aman_resume.pdf' 
           download
