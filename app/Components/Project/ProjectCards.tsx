@@ -11,8 +11,8 @@ interface ProjectCardsProps {
 const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
 
   return (
-    <div className="text-background flex rounded-2xl overflow-hidden h-140 flex-col sm:h-140 sm:flex-row">
-        <div className="bg-red-800 rounded-2xl flex-1 overflow-hidden">
+    <li className='px-43 max-h-138 flex items-center gap-16'>
+        <div className="bg-red-800 min-w-206 rounded-2xl flex-1 overflow-hidden">
           <img src={project.image} alt={project.title} className='h-full object-cover'/>
         </div>
         <div className='flex flex-col gap-4'>
@@ -21,7 +21,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
             <span>|</span>
             <span>Finance</span>
           </p>
-          <h4>{project.title}</h4>
+          <h4 className='font-text font-bold text-4xl'>{project.title}</h4>
           <div className='flex gap-3 flex-wrap'>
             <ActionLink title='Read Case Study' isPrimary={true} link={project.caseStudyLink}/>
             <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink}/>
@@ -32,23 +32,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
             <Tags title='Frontend'/>
           </ul>
         </div>
-        {/* <div className="bg-red-800 rounded-2xl flex-1 overflow-hidden">
-          <img src={project.image} alt={project.title} className='h-full object-cover'/>
-        </div>
-        <div className="p-4 flex-1 flex flex-col justify-between">
-            <h3 className='text-2xl font-heading text-primary'>
-              <a href={project.caseStudyLink} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </a>
-            </h3>
-            <ul className='flex gap-2 flex-wrap'>
-                <Tags title='UX Research'/>
-                <Tags title='UI'/>
-                <Tags title='Frontend'/>
-            </ul>
-            <p className='font-text'>{project.description}</p>
-        </div> */}
-    </div>
+    </li>
   )
 }
 
