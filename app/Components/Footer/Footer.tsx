@@ -2,13 +2,47 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='responsive-padding flex justify-between items-end pt-15 pb-4 font-heading text-'>
-      <div>
-        <h5 className='text-[72px] font-text'><span>Get in </span><span className='italic font-bold'>touch</span></h5>
-        <div className='flex gap-5'>
+    <footer className='responsive-padding flex flex-col sm:flex-row justify-between items-start sm:items-end pt-6 sm:pt-15 pb-4 font-heading text-'>
+      <div className='w-full flex flex-col gap-4'>
+        <h5 className='text-[48px] sm:text-[72px] font-text'><span>Get in </span><span className='italic font-bold'>touch</span></h5>
+        <ul className='sm:hidden flex justify-between'>
+          <li>
+            <a href="mailto:25amrj@gmail.com">
+              <img src='/icons/mail.svg' alt='email' className='w-12'/>
+            </a>
+          </li>
+          <li>
+            <a 
+              href='https://www.linkedin.com/in/aman-r-8a2724107/'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <img src='/icons/linkedin.png' alt='linkedin' className='w-12'/>
+            </a>
+          </li>
+          <li>
+            <a 
+              href='https://www.behance.net/amanraj228'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <img src='/icons/behance.png' alt='behance' className='w-12'/>
+            </a>
+          </li>
+          <li>
+            <a 
+              href='https://github.com/11amanraj'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <img src='/icons/github.png' alt='github' className='w-12'/>
+            </a>
+          </li>
+        </ul>
+        <div className='flex flex-col sm:flex-row gap-5 text-base'>
           <p>Copyright © Aman Raj</p>
-          <div>|</div>
-          <p className='flex gap-1'>
+          <div className='hidden sm:block'>|</div>
+          <p className='flex gap-1 items-center'>
             <span>Made with</span>
             <img src='/icons/heart.svg' alt='heart'/>
             <span>and</span>
@@ -17,7 +51,7 @@ const Footer = () => {
           </p>  
         </div>
       </div>
-      <div className='flex gap-5'>
+      <div className='hidden sm:flex flex-col sm:flex-row text-xs sm:text-base gap-2 sm:gap-5'>
         <a href="mailto:25amrj@gmail.com">25amrj@gmail.com</a>
         <div>|</div>
         <a 
