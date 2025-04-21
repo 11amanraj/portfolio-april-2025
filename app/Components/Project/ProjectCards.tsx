@@ -22,9 +22,9 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
             <span>Finance</span>
           </p>
           <h4>{project.title}</h4>
-          <div className='flex gap-3'>
-            <ActionLink />
-            <ActionLink />
+          <div className='flex gap-3 flex-wrap'>
+            <ActionLink title='Read Case Study' isPrimary={true} link={project.caseStudyLink}/>
+            <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink}/>
           </div>
           <ul className='flex gap-3'>
             <Tags title='UX Research'/>
