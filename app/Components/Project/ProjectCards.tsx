@@ -2,6 +2,7 @@
 import React from 'react'
 import Tags from './Tags'
 import { Project } from '@/app/Types/Interface'
+import ActionLink from './ActionLink';
 
 interface ProjectCardsProps {
   project: Project
@@ -21,17 +22,11 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
             <span>Finance</span>
           </p>
           <h4>{project.title}</h4>
-          <div>
-            <a>
-              <p>Read Case Study</p>
-              <div></div>
-            </a>
-            <a>
-              <p>Github</p>
-              <div></div>
-            </a>
+          <div className='flex gap-3'>
+            <ActionLink />
+            <ActionLink />
           </div>
-          <ul className='flex gap-2'>
+          <ul className='flex gap-3'>
             <Tags title='UX Research'/>
             <Tags title='UI'/>
             <Tags title='Frontend'/>

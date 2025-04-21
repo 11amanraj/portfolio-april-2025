@@ -2,7 +2,10 @@ import React from 'react'
 
 const ActionLink = () => {
   return (
-    <div>ActionLink</div>
+    <a>
+        <p>Read Case Study</p>
+        <div></div>
+    </a>
   )
 }
 
