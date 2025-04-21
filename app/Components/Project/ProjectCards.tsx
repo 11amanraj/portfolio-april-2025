@@ -31,7 +31,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
               <div></div>
             </a>
           </div>
-          <ul>
+          <ul className='flex gap-2'>
             <Tags title='UX Research'/>
             <Tags title='UI'/>
             <Tags title='Frontend'/>
