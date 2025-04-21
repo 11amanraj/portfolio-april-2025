@@ -28,6 +28,12 @@ const Footer = () => {
             target='_blank'
             rel="noopener noreferrer"
         >Behance</a>
+        <div>|</div>
+        <a 
+            href='https://github.com/11amanraj'
+            target='_blank'
+            rel="noopener noreferrer"
+        >Github</a>
       </div>
       {/* <div>
         <h4 className='text-3xl'>Say Hi!</h4>
