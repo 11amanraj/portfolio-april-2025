@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className='bg-blue-600 text-white responsive-padding'>
       <div>
-        <h4>Say Hi!</h4>
+        <h4 className='text-3xl'>Say Hi!</h4>
         <a href="mailto:25amrj@gmail.com">25amrj@gmail.com</a>
       </div>
       <div className='flex flex-col sm:flex-row sm:justify-between'>
