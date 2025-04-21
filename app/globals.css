@@ -20,7 +20,7 @@
 
 @layer components {
   .responsive-padding {
-    @apply px-8 sm:px-12 lg:px-16
+    @apply px-6 sm:px-12 lg:px-16
   }
 }
 
