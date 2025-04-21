@@ -11,6 +11,9 @@ const Footer = () => {
           <p className='flex gap-1'>
             <span>Made with</span>
             <img src='/icons/heart.svg' alt='heart'/>
+            <span>and</span>
+            {/* Icon by Freepik - https://www.flaticon.com/free-icons/dumpling title - dumpling icons */}
+            <img src='/icons/momo.png' alt='momo' className='w-6 h-6' title='Momo :)'/>
           </p>  
         </div>
       </div>
