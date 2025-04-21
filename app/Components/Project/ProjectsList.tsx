@@ -53,8 +53,12 @@ const ProjectsList = () => {
       ]
 
   return (
-    <div className="flex flex-col w-full gap-8 responsive-padding pb-8 bg-primary">
-        {project_details.map(project => <ProjectCards key={project.id} project={project}/>)}
+    <div className="flex flex-col w-full gap-8 py-16 responsive-padding bg-primary">
+        <h3 className='text-[96px] text-background'>Projects</h3>
+        {project_details
+            .map(project => 
+                <ProjectCards key={project.id} project={project}/>
+            )}
       </div>
   )
 }
