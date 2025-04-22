@@ -5,13 +5,14 @@ import { Project } from '@/app/Types/Interface'
 import ActionLink from './ActionLink';
 
 interface ProjectCardsProps {
-  project: Project
+  project: Project,
+  isReverse: boolean
 }
 
-const ProjectCards: React.FC<ProjectCardsProps> = ({ project }) => {
+const ProjectCards: React.FC<ProjectCardsProps> = ({ project, isReverse }) => {
 
   return (
-    <li className='flex flex-col sm:flex-row items-center gap-8 sm:gap-16  sm:bg-green-950 md:bg-yellow-200 lg:bg-white xl:bg-black 2xl:bg-amber-600'>
+    <li className={`flex flex-col ${isReverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-16  sm:bg-green-950 md:bg-yellow-200 lg:bg-white xl:bg-black 2xl:bg-amber-600`}>
         <div className="rounded-2xl flex-1 overflow-hidden">
           <img src={project.image} alt={project.title} className='h-full object-cover'/>
         </div>

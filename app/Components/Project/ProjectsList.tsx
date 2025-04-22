@@ -58,7 +58,7 @@ const ProjectsList = () => {
         <ul className='flex flex-col gap-16 sm:gap-24 items-center'>
             {project_details
                 .map(project => 
-                    <ProjectCards key={project.id} project={project}/>
+                    <ProjectCards key={project.id} isReverse={(project.id) % 2 !== 0} project={project}/>
                 )}
         </ul>
       </div>
