@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='responsive-padding flex flex-col sm:flex-row justify-between items-start sm:items-end pt-6 sm:pt-15 pb-4 font-heading text-'>
+    <footer className='responsive-padding flex flex-col lg:flex-row justify-between items-start lg:items-end pt-6 lg:pt-15 pb-4 font-heading text-'>
       <div className='w-full flex flex-col gap-4'>
-        <h5 className='text-[48px] sm:text-[72px] font-text'><span>Get in </span><span className='italic font-bold'>touch</span></h5>
-        <ul className='sm:hidden flex justify-between'>
+        <h5 className='text-[48px] lg:text-[72px] font-text'><span>Get in </span><span className='italic font-bold'>touch</span></h5>
+        <ul className='lg:hidden flex justify-between'>
           <li>
             <a href="mailto:25amrj@gmail.com">
               <img src='/icons/mail.svg' alt='email' className='w-12'/>
@@ -39,9 +39,9 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <div className='flex flex-col sm:flex-row gap-5 text-base'>
+        <div className='flex flex-col lg:flex-row gap-5 text-base'>
           <p>Copyright © Aman Raj</p>
-          <div className='hidden sm:block'>|</div>
+          <div className='hidden lg:block'>|</div>
           <p className='flex gap-1 items-center'>
             <span>Made with</span>
             <img src='/icons/heart.svg' alt='heart'/>
@@ -51,7 +51,7 @@ const Footer = () => {
           </p>  
         </div>
       </div>
-      <div className='hidden sm:flex flex-col sm:flex-row text-xs sm:text-base gap-2 sm:gap-5'>
+      <div className='hidden lg:flex flex-col lg:flex-row text-xs lg:text-base gap-2 lg:gap-5'>
         <a href="mailto:25amrj@gmail.com">25amrj@gmail.com</a>
         <div>|</div>
         <a 
