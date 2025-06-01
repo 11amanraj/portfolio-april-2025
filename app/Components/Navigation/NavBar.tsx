@@ -10,6 +10,7 @@ const NavBar = () => {
         <a 
           href='/aman_resume.pdf' 
           download
+          className='text-primary font-heading'
         >
           Resume
         </a>
