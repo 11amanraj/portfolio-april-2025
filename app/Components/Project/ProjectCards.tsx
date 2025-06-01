@@ -12,7 +12,7 @@ interface ProjectCardsProps {
 const ProjectCards: React.FC<ProjectCardsProps> = ({ project, isReverse }) => {
 
   return (
-    <li className={`max-w-294 flex flex-col ${isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 md:gap-16`}>
+    <li className={`max-w-300 p-8 rounded-4xl bg-white/70 flex flex-col ${isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-8 md:gap-16`}>
         <div className="rounded-2xl w-full flex-1 overflow-hidden">
           <img src={project.image} alt={project.title} className='h-full object-cover'/>
         </div>
