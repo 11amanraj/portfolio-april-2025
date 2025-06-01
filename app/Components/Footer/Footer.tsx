@@ -8,7 +8,7 @@ const Footer = () => {
         <ul className='lg:hidden flex justify-between'>
           <li>
             <a href="mailto:25amrj@gmail.com">
-              <img src='/icons/mail.svg' alt='email' className='w-12'/>
+              <img src='/icons/mail.svg' alt='email' className='w-10 sm:w-12'/>
             </a>
           </li>
           <li>
@@ -17,7 +17,7 @@ const Footer = () => {
               target='_blank'
               rel="noopener noreferrer"
             >
-              <img src='/icons/linkedin.png' alt='linkedin' className='w-12'/>
+              <img src='/icons/linkedin.png' alt='linkedin' className='w-10 sm:w-12'/>
             </a>
           </li>
           <li>
@@ -26,7 +26,7 @@ const Footer = () => {
               target='_blank'
               rel="noopener noreferrer"
             >
-              <img src='/icons/behance.png' alt='behance' className='w-12'/>
+              <img src='/icons/behance.png' alt='behance' className='w-10 sm:w-12'/>
             </a>
           </li>
           <li>
@@ -35,7 +35,7 @@ const Footer = () => {
               target='_blank'
               rel="noopener noreferrer"
             >
-              <img src='/icons/github.png' alt='github' className='w-12'/>
+              <img src='/icons/github.png' alt='github' className='w-10 sm:w-12'/>
             </a>
           </li>
         </ul>
