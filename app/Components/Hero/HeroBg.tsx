@@ -1,4 +1,5 @@
-import React from 'react'
+"use client";
+import { useRef, useEffect } from "react";
 
 const HeroBg = () => {
   return (

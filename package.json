@@ -12,7 +12,8 @@
     "next": "15.2.4",
     "p5": "^2.0.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-p5": "^1.4.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
