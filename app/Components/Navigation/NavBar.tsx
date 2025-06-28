@@ -1,6 +1,6 @@
 import React from 'react'
-import NavLinks from '../Navigation/NavLinks'
-import NavLinksCondensed from '../Navigation/NavLinksCondensed'
+// import NavLinks from '../Navigation/NavLinks'
+// import NavLinksCondensed from '../Navigation/NavLinksCondensed'
 
 const NavBar = () => {
   return (

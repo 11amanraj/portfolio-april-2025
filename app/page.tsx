@@ -1,4 +1,3 @@
-import { Project } from '@/app/Types/Interface'
 import ProjectsList from "./Components/Project/ProjectsList";
 import HeroSection from './Components/Hero/HeroSection';
 
