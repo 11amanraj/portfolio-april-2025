@@ -3,9 +3,11 @@
 import React, { useState, useEffect } from 'react'
 import PageNavigation from './PageNavigation'
 import PageProgress from './PageProgress'
+import { sectionDetail } from '@/app/Types/Interface'
+import CaseSection from './CaseSection'
 
 const CaseStudy = () => {
-    const sections = [
+    const sections: sectionDetail[] = [
         {
             key: 0,
             id: 'section-a',
@@ -61,11 +63,7 @@ const CaseStudy = () => {
         <div>
             {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
             {sections.map(section =>
-                <section
-                    key={section.key}
-                    id={section.id}
-                    className={`h-screen max-w-320 mx-auto ${section.bg}`}
-                >{section.title}</section>
+                <CaseSection sectionDetail={section} />
             )}
             {/* <PageProgress /> */}
         </div>

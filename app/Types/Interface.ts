@@ -7,3 +7,10 @@ export interface Project {
     resourceLink: string,
     image: string
 }
+
+export interface sectionDetail {
+    key: number,
+    id: string,
+    title: string,
+    bg: string
+}

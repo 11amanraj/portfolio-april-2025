@@ -1,11 +1,5 @@
 import React from 'react'
-
-interface sectionDetail {
-  key: number,
-  id: string,
-  title: string,
-  bg: string
-}
+import { sectionDetail } from '@/app/Types/Interface'
 
 const PageNavigation: React.FC<{ activeSection: string, sectionDetail: sectionDetail[] }> = ({ activeSection, sectionDetail }) => {
   return (

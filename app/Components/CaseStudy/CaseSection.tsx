@@ -1,12 +1,13 @@
 import React from 'react'
-import CaseStudy from './CaseStudy'
+import { sectionDetail } from '@/app/Types/Interface'
 
-const CaseSection = () => {
+const CaseSection: React.FC<{ sectionDetail: sectionDetail }> = ({ sectionDetail }) => {
   return (
-    <div>
-        <div>Video will go here</div>
-        <CaseStudy />
-    </div>
+    <section
+      key={sectionDetail.key}
+      id={sectionDetail.id}
+      className={`h-screen max-w-320 mx-auto ${sectionDetail.bg}`}
+    >{sectionDetail.title}</section>
   )
 }
 
