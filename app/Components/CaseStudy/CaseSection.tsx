@@ -8,20 +8,35 @@ const CaseSection: React.FC<{ sectionDetail: sectionDetail, totalSections: numbe
       id={sectionDetail.id}
       className={`h-screen max-w-320 mx-auto p-4 ${sectionDetail.bg}`}
     >
-      <h2 className='flex flex-col gap-2 font-mono'>
-        <span>
-          {`0${sectionDetail.key + 1} / 0${totalSections}`}
-        </span>
-        <span className='h-0.5 bg-red-400'></span>
-        <div className='flex justify-between'>
-          <span className='text-5xl'>
-            {sectionDetail.title}
+      <div className='flex font-mono'>
+        <div className='flex flex-col gap-2'>
+          <span>
+            {`0${sectionDetail.key + 1} / 0${totalSections}`}
           </span>
-          <span className='text-3xl max-w-140 text-right'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </span>
+          <span className='h-0.5 bg-red-400'></span>
+          <h2 className='text-5xl'>Title</h2>
         </div>
-      </h2>
+
+        <div className='flex flex-col gap-2'>
+          <span className='text-right'>
+            Mini Title
+          </span>
+          <span className='h-0.5 bg-red-400'></span>
+          <h2 className='text-3xl max-w-140 text-right'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+        </div>
+
+        <div className='flex flex-col gap-2'>
+          <span className='text-right'>
+            Mini Title
+          </span>
+          <span className='h-0.5 bg-red-400'></span>
+          <h2 className='text-3xl max-w-140 text-right'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </h2>
+        </div>
+      </div>
     </section>
   )
 }
