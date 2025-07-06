@@ -14,3 +14,9 @@ export interface sectionDetail {
     title: string,
     bg: string
 }
+
+export interface titleSection {
+    id: number,
+    header?: string,
+    text?: string
+}
