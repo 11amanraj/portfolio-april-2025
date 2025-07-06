@@ -63,7 +63,7 @@ const CaseStudy = () => {
         <div>
             {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
             {sections.map(section =>
-                <CaseSection sectionDetail={section} />
+                <CaseSection sectionDetail={section} totalSections={sections.length} />
             )}
             {/* <PageProgress /> */}
         </div>
