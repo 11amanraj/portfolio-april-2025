@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import PageNavigation from './PageNavigation'
+import PageProgress from './PageProgress'
 
 const CaseStudy = () => {
     const sections = [
@@ -59,6 +60,7 @@ const CaseStudy = () => {
         <section id='section-b' className='h-screen w-full bg-red-800'>Section B</section>
         <section id='section-c' className='h-screen w-full bg-black'>Section C</section>
         <section id='section-d' className='h-screen w-full bg-blue-800'>Section D</section>
+        <PageProgress />
     </div>
   )
 }
