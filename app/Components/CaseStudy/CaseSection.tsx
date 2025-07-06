@@ -13,9 +13,14 @@ const CaseSection: React.FC<{ sectionDetail: sectionDetail, totalSections: numbe
           {`0${sectionDetail.key + 1} / 0${totalSections}`}
         </span>
         <span className='h-0.5 bg-red-400'></span>
-        <span className='text-5xl'>
-          {sectionDetail.title}
-        </span>
+        <div className='flex justify-between'>
+          <span className='text-5xl'>
+            {sectionDetail.title}
+          </span>
+          <span className='text-3xl max-w-140 text-right'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </span>
+        </div>
       </h2>
     </section>
   )
