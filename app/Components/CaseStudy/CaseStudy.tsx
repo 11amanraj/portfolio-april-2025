@@ -63,7 +63,7 @@ const CaseStudy = () => {
         <div>
             {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
             {sections.map(section => (
-                <CaseSection sectionDetail={section} totalSections={sections.length}>
+                <CaseSection key={section.key} sectionDetail={section} totalSections={sections.length}>
                     This is children Section
                 </CaseSection>
             ))}
