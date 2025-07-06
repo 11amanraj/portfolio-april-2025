@@ -59,15 +59,15 @@ const CaseStudy = () => {
 
     return (
         <div>
-            <PageNavigation activeSection={activeSection} sectionDetail={sections} />
+            {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
             {sections.map(section =>
                 <section
                     key={section.key}
                     id={section.id}
-                    className={`h-screen w-full ${section.bg}`}
+                    className={`h-screen max-w-320 mx-auto ${section.bg}`}
                 >{section.title}</section>
             )}
-            <PageProgress />
+            {/* <PageProgress /> */}
         </div>
     )
 }
