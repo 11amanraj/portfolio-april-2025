@@ -61,13 +61,16 @@ const CaseStudy = () => {
 
     return (
         <div>
-            {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
+            <PageNavigation activeSection={activeSection} sectionDetail={sections} />
+            <section className="w-full max-w-[1280px] aspect-[16/9] bg-gray-800 mx-auto">
+                Video goes here
+            </section>
             {sections.map(section => (
                 <CaseSection key={section.key} sectionDetail={section} totalSections={sections.length}>
                     This is children Section
                 </CaseSection>
             ))}
-            {/* <PageProgress /> */}
+            <PageProgress />
         </div>
     )
 }
