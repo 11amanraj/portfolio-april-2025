@@ -18,7 +18,9 @@ const PageProgress = () => {
   }, [])
 
   return (
-    <div style={{ width: `${scrollWidth}%` }} className='h-4 w-80 fixed bottom-0 left-0 bg-blue-200'>
+    <div style={{ width: `${scrollWidth}%` }}
+      className='h-4 w-80 fixed bottom-4 bg-blue-200'
+    >
       PageProgress
     </div>
   )
