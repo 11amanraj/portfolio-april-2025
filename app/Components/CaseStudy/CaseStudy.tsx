@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import PageNavigation from './PageNavigation'
+// import PageNavigation from './PageNavigation'
 import PageProgress from './PageProgress'
 import { sectionDetail } from '@/app/Types/Interface'
 import CaseSection from './CaseSection'
@@ -61,7 +61,7 @@ const CaseStudy = () => {
 
     return (
         <div>
-            <PageNavigation activeSection={activeSection} sectionDetail={sections} />
+            {/* <PageNavigation activeSection={activeSection} sectionDetail={sections} /> */}
             <section className="w-full max-w-[1280px] aspect-[16/9] bg-gray-800 mx-auto">
                 Video goes here
             </section>

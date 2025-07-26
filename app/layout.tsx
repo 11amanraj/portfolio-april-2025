@@ -18,9 +18,9 @@ export default function RootLayout({
       <body
         className="antialiased min-h-screen"
       >
-        {/* <NavBar /> */}
+        <NavBar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
