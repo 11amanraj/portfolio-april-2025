@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+// import React, { useState, useEffect } from 'react'
 // import PageNavigation from './PageNavigation'
 import PageProgress from './PageProgress'
 import { sectionDetail } from '@/app/Types/Interface'
