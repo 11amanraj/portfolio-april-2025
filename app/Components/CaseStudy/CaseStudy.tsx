@@ -34,30 +34,30 @@ const CaseStudy = () => {
         },
     ]
 
-    const [activeSection, setActiveSection] = useState(sections[0].id)
+    // const [activeSection, setActiveSection] = useState(sections[0].id)
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setActiveSection(entry.target.id)
-                    }
-                })
-            },
-            {
-                rootMargin: '0px',
-                threshold: 0.6,
-            }
-        )
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         (entries) => {
+    //             entries.forEach((entry) => {
+    //                 if (entry.isIntersecting) {
+    //                     setActiveSection(entry.target.id)
+    //                 }
+    //             })
+    //         },
+    //         {
+    //             rootMargin: '0px',
+    //             threshold: 0.6,
+    //         }
+    //     )
 
-        sections.forEach((section) => {
-            const el = document.getElementById(section.id)
-            if (el) observer.observe(el)
-        })
+    //     sections.forEach((section) => {
+    //         const el = document.getElementById(section.id)
+    //         if (el) observer.observe(el)
+    //     })
 
-        return () => observer.disconnect()
-    }, [])
+    //     return () => observer.disconnect()
+    // }, [])
 
     return (
         <div>
