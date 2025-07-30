@@ -32,7 +32,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project, isReverse, designC
           <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink} /> */}
         </div>
         <ul className='flex gap-3'>
-          {project.tags.map(tag => <Tags title={tag} />)}
+          {project.tags.map(tag => <Tags key={Math.random()} title={tag} />)}
         </ul>
       </div>
     </li>
