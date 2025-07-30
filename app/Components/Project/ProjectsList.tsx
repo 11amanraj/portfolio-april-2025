@@ -8,7 +8,7 @@ const ProjectsList = () => {
       id: 0,
       title: 'Academic Info System for IIT Roorkee',
       description: 'Identified communication gaps in IIT Roorkee’s academic ecosystem and designed a centralized platform using user interviews and the Double Diamond approach.',
-      tags: ['UX Research, UI, Frontend'],
+      tags: ['UX Research', 'UI Design'],
       caseStudyLink: 'https://www.behance.net/gallery/221113241/Academic-Information-System',
       resourceLink: 'www.google.com',
       image: '/project-thumbnails/ais-portal.jpg'
@@ -17,7 +17,7 @@ const ProjectsList = () => {
       id: 1,
       title: 'GPay Redesign: Smarter Splits, Clearer Expenses',
       description: 'An experience-focused redesign that simplifies how users split costs and monitor spending within the Google Pay ecosystem.',
-      tags: ['UX Research, UI, Frontend'],
+      tags: ['UI Design', 'UX Research'],
       caseStudyLink: 'https://www.behance.net/gallery/211761657/GPay-Redesign',
       resourceLink: 'www.google.com',
       image: '/project-thumbnails/gpay-redesign.jpg'
@@ -26,24 +26,24 @@ const ProjectsList = () => {
       id: 2,
       title: 'Researching Mobile Accessibility for the Elderly',
       description: 'Through user interviews and observational research, we uncovered barriers faced by older adults in mobile usage — culminating in a comprehensive set of accessibility guidelines.',
-      tags: ['UX Research, Frontend'],
+      tags: ['UX Research'],
       caseStudyLink: 'https://www.behance.net/gallery/213415765/A-UX-case-study-on-senior-friendly-mobile-interactions',
       resourceLink: 'www.google.com',
       image: '/project-thumbnails/elderly-ux.jpg'
     }
   ]
 
-  // const dev_projects: Project[] = [
-  //   {
-  //     id: 3,
-  //     title: 'A Designer–Developer’s Portfolio, Built with Code',
-  //     description: 'Designed and developed my own portfolio using Next.js, TailwindCSS, and TypeScript — blending aesthetics with performance and thoughtful UX.',
-  //     tags: ['UX Resarch, UI, Frontend'],
-  //     caseStudyLink: 'https://www.behance.net/gallery/213415765/A-UX-case-study-on-senior-friendly-mobile-interactions',
-  //     resourceLink: 'www.google.com',
-  //     image: '/project-thumbnails/portfolio.jpg'
-  //   }
-  // ]
+  const dev_projects: Project[] = [
+    {
+      id: 3,
+      title: 'A Designer–Developer’s Portfolio, Built with Code',
+      description: 'Designed and developed my own portfolio using Next.js, TailwindCSS, and TypeScript — blending aesthetics with performance and thoughtful UX.',
+      tags: ['Frontend', 'React'],
+      caseStudyLink: 'https://www.amanraj.in/',
+      resourceLink: 'https://github.com/11amanraj/portfolio-april-2025',
+      image: '/project-thumbnails/portfolio.jpg'
+    }
+  ]
 
   return (
     <div className="snap-start text-background flex flex-col w-full gap-8 py-6 sm:py-16 responsive-padding bg-primary">
@@ -53,10 +53,10 @@ const ProjectsList = () => {
           .map(project =>
             <ProjectCards key={project.id} isReverse={(project.id) % 2 !== 0} project={project} designCaseStudy={true} />
           )}
-        {/* {dev_projects
+        {dev_projects
           .map(project =>
             <ProjectCards key={project.id} isReverse={(project.id) % 2 !== 0} project={project} designCaseStudy={false} />
-          )} */}
+          )}
       </ul>
     </div>
   )

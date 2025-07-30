@@ -24,7 +24,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project, isReverse, designC
             ? <ActionLink title='Read Case Study' isPrimary={true} link={project.caseStudyLink} />
             : <>
               <ActionLink title='View Website' isPrimary={true} link={project.caseStudyLink} />
-              <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink} />
+              <ActionLink title='Github' isPrimary={false} link={project.resourceLink} />
             </>
             // : <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink} />
           }
@@ -32,9 +32,7 @@ const ProjectCards: React.FC<ProjectCardsProps> = ({ project, isReverse, designC
           <ActionLink title='Github' isPrimary={false} link={project.caseStudyLink} /> */}
         </div>
         <ul className='flex gap-3'>
-          <Tags title='UX Research' />
-          <Tags title='UI' />
-          <Tags title='Frontend' />
+          {project.tags.map(tag => <Tags title={tag} />)}
         </ul>
       </div>
     </li>
