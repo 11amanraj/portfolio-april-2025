@@ -42,6 +42,15 @@ const ProjectsList = () => {
       caseStudyLink: 'https://www.amanraj.in/',
       resourceLink: 'https://github.com/11amanraj/portfolio-april-2025',
       image: '/project-thumbnails/portfolio.jpg'
+    },
+    {
+      id: 4,
+      title: 'Minimal To-Do App',
+      description: 'A clean, responsive to-do app built with Next.js and Tailwind CSS, designed for fast, organized task management across devices.',
+      tags: ['Frontend', 'React'],
+      caseStudyLink: 'https://to-do-latest.vercel.app/',
+      resourceLink: 'https://github.com/11amanraj/to-do-latest',
+      image: '/project-thumbnails/to-do.png'
     }
   ]
 
