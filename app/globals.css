@@ -2,8 +2,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #DFDFD6;
-  --foreground:	#1B1B1F;
+  /* Light mode colors add mode switcher */
+  /* --background: #DFDFD6;
+  --foreground:	#1B1B1F; */
+
+  --background: #1B1B1F;
+  --foreground: #DFDFD6;
+
   --primary: #0A84FF;
   /* --primary: #F56565; */
   --font-heading: 'Comfortaa', sans-serif;
@@ -27,8 +32,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background:	#1B1B1F;
-    --foreground:	#DFDFD6;
+    --background: #1B1B1F;
+    --foreground: #DFDFD6;
     /* --primary: 	#F56565; */
     /* --primary: 	#F56565; */
   }
